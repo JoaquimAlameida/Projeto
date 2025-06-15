@@ -1,0 +1,172 @@
+ 
+ /* Só mostra o botão em dispositivos móveis */
+ 
+ #HamburguerBtn {
+        display:none;
+    }
+
+
+/* Tablets pequenos e smartphones grandes - 481px até 768px */
+@media screen and (max-width: 768px) {
+    
+    #BarraNav {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 0; /* <-- importante para evitar espaço vertical */
+    height: 5rem;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+#LogoStudentHub {
+    font-size: 18px;
+    text-align: center;
+    margin: 0; /* <-- elimina qualquer margem extra */
+    padding: 0;
+}
+
+#BoasVindas {
+    text-align: center;
+    margin: 0; /* <-- elimina o espaço acima/abaixo */
+    padding: 0;
+    display: flex;
+}
+
+#BoasVindas h1 {
+    font-size: 1rem;
+    margin: 0; /* <-- elimina o espaço do próprio h1 */
+}
+
+
+
+/* BOTÃO */
+
+
+    #BarraNavDireita {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(#f55b5b);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left:0.5rem;
+    }
+
+    #BarraNavDireita.show {
+        display: flex;
+    }
+
+    #Menu, #Login_Registar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap:4rem;
+   
+    }
+
+    #Menu li, #Login_Registar li {
+        width: 100%;
+    }
+
+
+
+    #HamburguerBtn {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1100;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    #Início,#EE,#Serviços,#Contactos,#Login{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow:
+            -0.50px -0.50px 0 rgba(0, 0, 0, 0.50),
+             0.50px -0.50px 0 rgba(0, 0, 0, 0.50),
+            -0.50px  0.50px 0 rgba(0, 0, 0, 0.50),
+             0.50px  0.50px 0 rgba(0, 0, 0, 0.50);
+}
+    
+    
+    
+
+/* -------------------------------------------------------------- */
+
+    main {
+        top:5rem;
+        padding-bottom: 0rem;
+        transform: scale(0.6);
+        transform-origin: top center;
+    }
+    
+    #BoxCarrossel, #Slider {
+        width: 90vw;
+        height: 300px;
+    }
+    
+    .TitulosInicio {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    
+    #ContainerNoticias, #ContainerResumo, #ContainerEventos {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        padding: 10px;
+    }
+    
+    .Noticias, .Resumo, .Eventos {
+        width: 13rem;
+        height: auto;
+        min-height: 20rem;
+        padding: 1.5rem;
+    }
+    
+    .Noticias img, .Resumo img, .Eventos img {
+        height: 10rem;
+    }
+    
+    .TextoMosaico, .TextoResumo, .TextoEventos {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    #Rodapé {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        gap: 1rem;
+    }
+    
+    #BarraRodaEsquerda,
+    #BarraRodaCentro,
+    #BarraRodaDireita {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #RedesSociais {
+        gap: 1rem;
+    }
+    
+    #Copyright, #email, #Instagram, #Facebook, #X {
+        font-size: 14px;
+    }
+}
+
