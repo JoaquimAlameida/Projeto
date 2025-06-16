@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub- Início</title>
+
+    <link rel="stylesheet" href="Pasta css/styleInicio.css">
+    <link rel="stylesheet" href="Pasta css/divInicio.css"> <!-- Links para acessar às diversas pastas -->
+    <link rel="stylesheet" href="Pasta css/aniInicio.css">
+    <link rel="stylesheet" href="Pasta css/media_Inicio.css">
+    
+
+</head>
+
+
+<!-- 1- Cabeçalho -->
+
+<header style="width: 100%; height:100% ;">
+
+    <nav id="BarraNav"> <!--Barra de Navegação-->
+
+
+        <div id="BarraNavEsquerda">
+
+            <a id="LogoStudentHub" href="../Pasta Início/Início.html"> <!-- Logo do StudentHub -->
+
+                StudentHub
+
+            </a>
+        </div>
+
+
+        <div id="BarraNavEsquerda">
+
+            <div id="BoasVindas"> <!-- Mensagem de Boas Vindas-->
+
+                <h1>Boas-Vindas ao StudentHub </h1>
+
+            </div>
+        </div>
+
+      <!-- Botão Hamburguer (só visível em mobile)  -->
+         
+      <button id="HamburguerBtn">☰</button>
+
+        <div id="BarraNavDireita">
+
+            <ul id="Menu"> <!-- Botões do Menu-->
+                <li>
+                    <a id="Início" href="../Pasta Início/Início.html"> Início </a>
+                </li>
+
+                <li>
+                    <a id="EE" href="../Pasta Espaços_Eventos/EspaçosEventos.html"> Espaços/Eventos </a>
+                </li>
+
+                <li>
+                    <a id="Serviços" href="../Pasta Serviços/Serviços.html"> Serviços </a>
+                </li>
+
+                <li>
+                    <a id="Contactos" href="../Pasta Contactos/Contactos.html"> Contactos </a>
+                </li>
+
+
+
+
+            </ul>
+
+            <ul id="Login_Registar">
+                <li>
+                    <a id="Login" href="../Pasta Login/Login.html"> Login/Registar </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+    </nav>
+
+</header>
+
+<script>
+      const botao = document.getElementById('HamburguerBtn');
+      const menu = document.getElementById('BarraNavDireita');
+      botao.addEventListener('click', () => {
+          menu.classList.toggle('show');
+      });
+    
+</script>
+
+
+<body style="width: 100%; height:100% ;">
+
+    <main>
+
+        <!-- 2- Carrossel Slider -->
+
+        <div id="BoxCarrossel"> <!-- Caixa do Carrossel -->
+
+
+            <div id="Slider"> <!-- Onde se encaixa as imagens e define-se o tamanho -->
+
+                <img id="Imagem1" src="../PastaExterna/pág inicio/secção 2/Carrosell Student Hub 1.webp" alt="Imagem1">
+                <!-- Imagem 1 do Carrossel -->
+                <img id="Imagem2" src="../PastaExterna/pág inicio/secção 2/Carrosell Student Hub 2.webp" alt="Imagem2">
+                <img id="Imagem3" src="../PastaExterna/pág inicio/secção 2/Carrosell Student Hub 3.webp" alt="Imagem3">
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- 3- Texto de Apresentação -->
+
+        <p>
+
+        <p class="TitulosInicio">
+
+            <strong> Noticías </strong>
+
+        </p>
+
+        <div id="ContainerNoticias">
+
+
+            <div class="Noticias"> <!-- Box das imagens Notícias-->
+
+
+                <img class="sec3-1" src="../PastaExterna/pág inicio/secção 3/sec3-1.jpg" alt="Imagem1">
+
+                <p class="TextoMosaico">
+                    Os estudantes terão acesso rápido e centralizado a informações importantes, como horários de
+                    eventos,
+                    espaços disponíveis e serviços da universidade, poupando tempo e reduzindo frustrações.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="Noticias"> <!-- Box das imagens Noticias-->
+
+
+                <img class="sec3-2" src="../PastaExterna/pág inicio/secção 3/sec3-2.jpg" alt="Imagem2">
+
+                <p class="TextoMosaico">
+                    O StudentHub permite que os estudantes se mantenham atualizados sobre atividades académicas,
+                    oportunidades de estágio e eventos sociais, promovendo maior envolvimento na vida universitária.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Noticias"> <!-- Box das imagens Noticias-->
+
+
+                <img class="sec3-3" src="../PastaExterna/pág inicio/secção 3/sec3-3.png" alt="Imagem3">
+
+                <p class="TextoMosaico">
+                    A personalização da experiência no StudentHub ajuda os estudantes a focarem-se apenas nas
+                    informações
+                    que lhes são mais relevantes, como notificações sobre disciplinas ou eventos específicos.
+
+                </p>
+
+
+            </div>
+
+            <div class="Noticias"> <!-- Box das imagens Noticias-->
+
+
+                <img class="sec3-4" src="../PastaExterna/pág inicio/secção 3/sec3-4.png" alt="Imagem4">
+
+                <p class="TextoMosaico">
+                    O StudentHub promove a organização dos estudantes, oferecendo acesso a recursos que os ajudam a
+                    gerir
+                    melhor o tempo e as suas atividades académicas.
+
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        </p>
+
+
+
+
+
+
+        <!-- 4- Resumo -->
+
+        <p>
+        <p class="TitulosInicio">
+
+            <strong> Resumo </strong>
+
+        </p>
+
+        <div id="ContainerResumo">
+
+            <div class="Resumo"> <!-- Box das imagens Resumo-->
+
+
+                <img class="sec4-1" src="../PastaExterna/pág inicio/secção 4/img-1.jpg" alt="Imagem1">
+
+                <p class=" TextoResumo">
+
+                    Estudantes destacam o impacto positivo do StudentHub no acompanhamento das suas atividades
+                    académicas,
+                    facilitando o acesso a eventos e informações de gestão académica.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="Resumo"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-2" src="../PastaExterna/pág inicio/secção 4/img-2.jpg" alt="Imagem2">
+
+                <p class=" TextoResumo">
+
+                    O StudentHub melhorou a organização dos estudantes ao centralizar informações
+                    sobre horários de eventos e recursos académicos, promovendo uma maior eficiência.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Resumo"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-3" src="../PastaExterna/pág inicio/secção 4/img-3.jpg" alt="Imagem3">
+
+
+                <p class=" TextoResumo">
+
+                    Mais de 80% dos estudantes elogiaram o StudentHub pela sua facilidade de uso e impacto
+                    positivo no planeamento das suas atividades académicas e sociais.
+
+
+                </p>
+
+
+            </div>
+
+            <div class="Resumo"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-4" src="../PastaExterna/pág inicio/secção 4/img-4.jpg" alt="Imagem4">
+
+                <p class=" TextoResumo">
+
+                    O StudentHub foi fundamental para aumentar a participação dos estudantes nos eventos do
+                    campus, com notificações em tempo real e informações detalhadas
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Resumo"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-5" src="../PastaExterna/pág inicio/secção 4/img-5.jpg" alt="Imagem5">
+
+                <p class=" TextoResumo">
+
+                    Graças ao StudentHub, os estudantes relatam sentir-se mais conectados e informados
+                    sobre oportunidades académicas e profissionais no campus.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Resumo"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-6" src="../PastaExterna/pág inicio/secção 4/img-6.jpg" alt="Imagem6">
+
+                <p class=" TextoResumo">
+
+                    Estudantes afirmam que o StudentHub simplificou o processo de obtenção de informações,
+                    permitindo-lhes focar mais nos seus objetivos académicos.
+
+                </p>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        </p>
+
+
+
+
+        <p>
+        <p class="TitulosInicio">
+
+            <strong> Eventos </strong>
+
+        </p>
+
+        <div id="ContainerEventos">
+
+            <div class="Eventos"> <!-- Box das imagens Resumo-->
+
+
+                <img class="sec4-7" src="../PastaExterna/pág inicio/secção 4/img-7.jpg" alt="Imagem7">
+
+                <p class=" TextoEventos">
+
+                    A sessão de demonstração do StudentHub irá capacitar os estudantes a utilizarem todas as
+                    funcionalidades
+                    da plataforma, garantindo que tirem o máximo proveito.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="Eventos"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-8" src="../PastaExterna/pág inicio/secção 4/img-8.jpg" alt="Imagem8">
+
+                <p class=" TextoEventos">
+
+                    Os estudantes poderão participar na sessão 'StudentHub em Ação', onde especialistas explicarão como
+                    tirar
+                    partido da plataforma para o seu sucesso académico.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Eventos"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-9" src="../PastaExterna/pág inicio/secção 4/img-9.jpg" alt="Imagem9">
+
+                <p class=" TextoEventos">
+
+                    A universidade organiza um evento de boas-vindas para estudantes, onde o StudentHub será apresentado
+                    como
+                    ferramenta indispensável para a vida académica."
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Eventos"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-10" src="../PastaExterna/pág inicio/secção 4/img-10.jpg" alt="Imagem10">
+
+                <p class=" TextoEventos">
+
+                    Venha ao evento 'Explorando o Campus com o StudentHub' e descubra como a plataforma pode transformar
+                    a
+                    experiência universitária.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Eventos"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-11" src="../PastaExterna/pág inicio/secção 4/img-11.jpg" alt="Imagem11">
+
+                <p class=" TextoEventos">
+
+                    A universidade realiza uma sessão de formação especial para novos alunos, introduzindo as principais
+                    funcionalidades do StudentHub e respondendo a dúvidas.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="Eventos"> <!-- Box das imagens Resumo-->
+
+                <img class="sec4-12" src="../PastaExterna/pág inicio/secção 4/img-12.jpg" alt="Imagem12">
+
+
+                <p class=" TextoEventos">
+
+                    Participe na inauguração da bibliotecca digital e aprenda como explorar ao máximo os seus recursos
+                    com especialistas no local.
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+        </p>
+
+
+
+
+
+
+
+
+
+    </main>
+    
+    
+</body>
+
+
+
+
+
+
+
+<!-- 5- Rodapé -->
+
+
+<footer id="Rodapé">
+    
+    <div id="BarraRodaEsquerda">
+        
+        <div id="Email">
+            
+            <a id="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=studenthub@ipluso.pt &su=Informações%20Gerais&body=Olá,%20gostaria%20de%20mais%20informações" target="_blank"> 
+                
+                studenthub@ipluso.pt 
+            
+            </a>
+            
+        </div>
+    </div>
+    
+    <div id="BarraRodaCentro">
+        
+        <ul id="RedesSociais">
+            
+            <li>
+                <img id="LogoInstagram" src="../PastaExterna/Pág contactos/instagram.png" alt="LogoInstagram">
+                <a id="Instagram" href="https://www.instagram.com/iplusofonia" target="_blank"> Instagram </a>
+                
+            </li>
+            
+            <li>
+                <img id="LogoFacebook" src="../PastaExterna/Pág contactos/facebook.png" alt="LogoFacebook">
+                <a id="Facebook" href="https://www.facebook.com/iplusofonia" target="_blank"> Facebook </a>
+                
+            </li>
+            
+            <li>
+                <img id="LogoX" src="../PastaExterna/Pág contactos/X.png" alt="LogoX">
+                <a id="X" href="https://x.com/iplusofonia" target="_blank"> X </a>
+                
+            </li>
+            
+        </ul>
+        
+    </div>
+    
+    
+    <div id="BarraRodaDireita">
+    
+        <div id="Copyright">
+    
+            Copyright &copy; StudentHub, 2025
+    
+        </div>
+    </div>
+    
+    
+    
+    
+    
+</footer>
+
+</html>
